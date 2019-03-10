@@ -23,16 +23,17 @@ public class Core {
 	/**
 	 * Main method of the class
 	 * @param args
-	 * @throws IOException
 	 */
 	public static void main(String[] args) {
 
 		reader = new BufferedReader(new InputStreamReader(System.in));
 		writer = new BufferedWriter(new OutputStreamWriter(System.out));
+		
 
-		// First line of input
-		String line;
+	
 		try {
+			// First line of input
+			String line;
 			line = reader.readLine();
 			// Current digit that will be found
 			Character currenDigit = ' ';
@@ -189,6 +190,10 @@ public class Core {
 		return digit;
 	}
 
+	/**
+	 *Getter of the Result
+	 * @return string with the converted numbers
+	 */
 	public static String getTotalResult() {
 		return totalResult;
 	}

@@ -1,13 +1,13 @@
 package test;
 
-import static org.junit.jupiter.api.Assertions.*;
+	
+import static org.junit.Assert.*;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 
-import org.junit.jupiter.api.Test;
 
 import logical.Core;
 
