@@ -42,6 +42,7 @@ public class Core {
 			boolean whileFlag = true;
 
 			while (line != null && !line.equals(" ") && whileFlag) {
+				
 				if (!totalResult.equals("")) {
 					totalResult += "\r\n";
 				}
@@ -63,9 +64,7 @@ public class Core {
 					writer.write("For the input you must enter 3 lines of the same size");
 					totalResult = "For the input you must enter 3 lines of the same size";
 					writer.flush();
-
 				} else {
-
 					// Array with the high, middle and low part of the digit(number) respectively
 					String[] digitArray = new String[3];
 
@@ -86,9 +85,7 @@ public class Core {
 
 						writer.write(currenDigit + "");
 						totalResult += currenDigit;
-
 					}
-
 					writer.write("\n");
 					writer.flush();
 					line = reader.readLine();
@@ -97,11 +94,9 @@ public class Core {
 					}
 				}
 			}
-
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
 	}
 
 	/**
@@ -113,7 +108,6 @@ public class Core {
 	 * @return Character Digit that represents the array
 	 */
 	public static Character getDigitNumber(String[] digitArray) {
-
 		// Each digit has 3 lines and each line has a string of 3 Characters
 		// Is the top part of the digit
 		String firstLine = digitArray[0];
